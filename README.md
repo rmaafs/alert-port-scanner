@@ -35,3 +35,12 @@ $ tcpdump -qns 0 -X -r archivo.pcap
 ```
 
 ![Ejemplo](https://i.imgur.com/ETEummV.png)
+
+---
+
+### Tags
+port scanner listener
+alert nmap port scanner
+listen scanning ports
+listen port scan
+nmap port scan alert
