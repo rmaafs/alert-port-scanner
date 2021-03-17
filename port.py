@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import os, time
 cooldown = 5#Tiempo que tardará escuchando los paquetes en los puertos
 recordsFileName = "records.pcap"#Archivo donde se guardarán los paquetes temporalmente
@@ -12,7 +13,7 @@ while True:
     #Normalmente, si no se recibe ningún paquete en el rango de puertos, el size del archivo temporal es de 24 bytes
     print("Size: " + str(size))
     if size > 24:#En caso de que tenga algún paquete capturado
-        print("Se esta haciendo port scanner, guardado en el archivo log" + str(int(time.time())) + ".pcap")
+        print("Se está haciendo port scanner. Se guardó en el archivo log" + str(int(time.time())) + ".pcap")
         #Creamos una copia del archivo temporal para analizarlo en un futuro
         os.system('mkdir -p logs && cp ' + recordsFileName + ' logs/log' + str(int(time.time())) + '.pcap')
         #Enviar correo o notificación push al administrador para analizar el log creado con el timestamp en unix.
